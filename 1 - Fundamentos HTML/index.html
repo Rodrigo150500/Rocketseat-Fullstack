@@ -1,33 +1,129 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu site</title>
+    <title>Fundamentos HTML</title>
 </head>
 <body>
-    <nav>
-        <a href="#home">Home</a>
-        <a href="#contato">Contato</a>
-        <a href="#blog">Bog</a>
-    </nav>
 
-    <main>
-        <section id="home">
-            <h1>Bem vindo ao meu site 😒</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate numquam excepturi iusto dolorem obcaecati! Odio nihil suscipit illo at in quia magnam nulla a voluptatibus veniam. Repellat sint non amet.</p>
-        </section>
+    <h1>Atributos</h1>
+    <p>Atributos são como entrada de parâmetros para uma determinada tag, por exemplo:</p>
+    <p>
+        <code>&lt;a href=&quot;&quot;&gt;&lt;/a&gt;</code>
+        <br>
+        <code>&lt;img src=&quot;&quot; alt=&quot;&quot;&gt;</code>
+    </p>
+    <p>No href da tag a colocamos o link para direcionar para uma determinada página, enquanto o src da img se torna o local de onde se encontra a fonte da imagem</p>
 
-        <section id="contato">
-            <h1>Contatos</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, dolor! Ipsa consequuntur consequatur sed quidem velit aperiam commodi dolorum tenetur voluptatibus voluptas! Magnam, veniam! Unde minima dicta voluptas perspiciatis voluptate.</p>
-        </section>
+    <h2>Atributos Booleanos</h2>
+    <p>Os atributos booleanos são atributos que recebem verdadeiros ou falsos, por exemplo</p>
+    <p>
+        <code>&lt;h2 hidden&gt; Title &lt;/h2&gt;</code>
+    </p>
+    <p>Esse hidden fará com que o h2 fique invisivel</p>
 
-        <section id="blog">
-            <h1>Blog</h1>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore ducimus, laboriosam at officiis officia aliquam veritatis, sed dolorum, molestiae ut quod debitis tempora labore saepe ipsum eaque enim ullam nobis.</p>
-        </section>
-    </main>
-    
+    <h2>Atributo ID</h2>
+    <p>Cada tag pode ser aplicada um ID, uma espécie de RG da tag, deve único e não pode começar com números</p>
+    <p>
+        <code>&lt;div id="container"&gt; &lt;/div&gt; </code>
+        <br>
+        <code>&lt;h2 id="titulo"&gt; &lt;/h2&gt; </code>
+    </p>
+
+    <h2>Atributo Class</h2>
+    <p>O atributo class é uma classificação de tags, onde consigo compartilhar a mesma classe para diversas tags</p>
+    <p>
+        <code>&lt;div class="produtos" &gt; &lt;/div&gt;</code>
+        <br>
+        <code>&lt;div class="produtos" &gt; &lt;/div&gt;</code>
+    </p>
+
+    <h2>Atributo data</h2>
+    <p>Esse atributo serve para colocarmos um nome em um novo atributo para podermos resgatarmos posteriormente no CSS ou no Javascript, aplicamos o "data-" a partir do "-"" podemos colocar um nome qualquer, evite colocar números ou carácteres especiais</p>
+    <p>
+        <code>&lt;div data-qualquer-coisa="1234" &gt; &lt;/div&gt;</code>
+    </p>
+
+    <h2>Atributo style</h2>
+    <p>Essa tag serve para estilizar o conteudo da tag, evite usar essa tag por ser específica e muito ruim para realizar manutenção em grande escala</p>
+    <p>
+        <code>&lt;div style="color:blue;" &gt; &lt;/div&gt;</code>
+
+    </p>
+
+    <h1>Elementos de Conteúdo</h1>
+
+    <h2>Semântica</h2>
+    <p>
+        A semântica tem um significado para cada tag, seria possível sim utilizar uma única tag para realizar tudo, porém ao usar tags que façam sentido fica mais fácil de fazer sua leitura para manutenções e até mesmo para os motores de busca. Basicamente temos tags para cada aplicação, como o título temo o h1, o parágrafo temos o p, para imagem temos img e assim vai
+    </p>
+
+
+    <h2>Títulos e Parágrafos</h2>
+    <p>
+        São usados para separar quando vamos mencionar o título e seu parágrafo
+    </p>
+    <p>
+        <code>&lt;h1 class="title" &gt; Sobre mim &lt;/h1&gt;</code>
+        <br>    
+        <code>&lt;p class="descricao" &gt; Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas fugiat totam perspiciatis a culpa impedit nulla molestiae iusto, voluptates similique odit, commodi pariatur vero voluptatum dolorum, soluta id tempora quisquam. &lt;/p&gt;</code>
+    </p>
+
+    <h2>Formatação Básica de Textos</h2>
+    <p>Podemos dar relevancias com os textos usando negrito, italico, marcado ou até riscadp</p>
+    <p>
+       Utilize as tags como:
+       <ul>
+        <li>strong - Para deixar em negrito</li>
+        <li>em - Para deixar em italico</li>
+        <li>mark - Para deixar em marcado como marca texto</li>
+        <li>s - Para deixar o texto riscado</li>
+       </ul>
+    </p>
+
+    <h2>Listas Ordenadas e Não Ordenadas</h2>
+    <p>
+        As listas ordenadas são listas que possuem ordem de sequência como 1,2 e 3. Enquanto as não ordenadas, não tem importancia em que posição estão sendo colocadas
+
+        <ul>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+        </ul>
+
+        <ol>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+        </ol>
+
+    <h2>Representação do código dentro do HTML</h2>
+
+    <p>Podemos utilizar as tags code e a tag pre</p>
+
+    <p>
+        <code>&lt;code&gt; serve colocar o código em si, podemos verificar que muda até sua fonte</code>
+        <pre>
+            <code>&lt;pre&gt; serve para utilizar identação levando em conta os espaços que temos dentro dessa tag</code>
+        </pre>
+
+    <h2>Hiperlink</h2>
+    <p>Os hiperlinks são links externos que podemos acessá-los bastando colocar em seu atributo href o local de uma pagina específica. Para abrirmos o link em outra aba podemos incluir o target = "_blank"</p>
+
+    <pre>
+        <code>&lt;a href="www.google.com" target="_blank"&gt; Google &lt;/a&gt;</code>
+    </pre>
+
+    <h2>Imagem</h2>
+    <p>
+        Para adicionar imagem coloque a tag &lt;img&gt; nos parâmetros vamos ter o alt que é uma descrição da imagem em caso de não carregar, o src que é onde a imagem está, se está no computador ou em um link externo e por fim o widht e height que definema largura e a altura da imagem 
+        </p>
+
+    <pre>
+        <code>
+            &lt;img src="" alt="" widht=200px height=200px /&gt;
+        </code>
+    </pre>
 </body>
 </html>
