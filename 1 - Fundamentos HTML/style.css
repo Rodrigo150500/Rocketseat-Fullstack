@@ -1,0 +1,17 @@
+#display_block{
+  width: 150px;
+  height: 150px;
+  border: solid 1px red;
+  padding: 50px;
+  margin: 50px
+}
+
+#display_inline{
+  border: dodgerblue 1px solid;
+
+  width: 200px;
+  height: 200px;
+
+  margin: 20px;
+  padding: 20px;
+}
