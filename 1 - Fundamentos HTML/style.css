@@ -39,3 +39,30 @@
   height: 50px;
   padding-bottom: 10px;
 }
+.margin_block{
+  border: 1px solid red;
+  margin: 20px;
+}
+
+.margin_block1{
+  border: 1px solid red;
+  margin: 20px 30px 15px 5rem;
+}
+
+.margin_collapsing{
+  border: 1px solid red;
+  margin: 50px;
+}
+
+.margin_auto{
+  border: 1px solid red;
+  width: 50px;
+  margin: auto;
+}
+
+.padding{
+
+  width: 100px;
+  border: 1px solid green;
+  padding: 5px 10px
+}

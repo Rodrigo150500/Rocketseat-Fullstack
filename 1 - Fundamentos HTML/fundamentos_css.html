@@ -60,5 +60,84 @@
   <div class="width_height">block</div>
   <span class="width_height">inline</span>
   
+  <h2>Margin</h2>
+  <p>
+    A <em>margin</em> serve para realizarmos distanciamento de outros containers, podemos configurar suas laterais de diversas maneiras, podendo ser:
+    <ul>
+      <li>Todas as laterais com único valor</li>
+      <li>Valores distintos para cada lado</li>
+      <li>Utilizando apenas dois valores para vertical e horizontal</li>
+    </ul>
+    Além disso, devemos tomar cuidado com o margin collapsing que basicamente se tivermos dois containers um abaixo do outro e aplicarmos um <em>margin-top</em> ele não somará a margin entre os containers, manterá o mesmo valor
+  </p>
+
+  <div class="margin_block">Block</div>
+  <span class="margin_block">Inline</span>
+
+<pre>
+  <code>
+    .margin_block{
+      border: 1px solid red;
+      margin: 20px;
+    }
+  </code>
+</pre>
+<p>
+  Podemos observar que o bloco inline não se afeta verticalmente, apenas horizontalmente
+</p>
+<p>Aplicando valores específicos para lado</p>
+
+<div class="margin_block1">Block</div>
+<span class="margin_block1">Inline</span>
+
+<pre>
+  <code>
+    .margin_block1{
+      border: 1px solid red;
+      margin: 20px 30px 15px 5rem;
+    }
+  </code>
+</pre>
+
+<p>
+  Exemplo de margin collapsing
+</p>
+
+<div class="margin_collapsing">Bloco</div>
+<div class="margin_collapsing">Bloco</div>
+
+<p>
+  Usando o valor Auto em margin, antes disso é necessário definir uma largura para essa função. Além disso só funciona horizontalmente
+</p>
+
+<div class="margin_auto">Bloco</div>
+
+<h2>Padding</h2>
+
+<p>
+  Não muito diferente do <em>margin</em> o <em>padding</em> faz o distanciamento dentro do prórprio container enquanto o margin faz fora.
+</p>
+<p>
+  Seus valores funcionam iguais do <em>margin</em> onde podemos:
+  <ul>
+    <li>Todas as laterais com único valor</li>
+    <li>Valores distintos para cada lado</li>
+    <li>Utilizando apenas dois valores para vertical e horizontal</li>
+  </ul>
+</p>
+
+<div class="padding">Block</div>
+<span class="padding">Inline</span>
+
+<pre>
+  <code>
+.padding{
+
+  width: 100px;
+  border: 1px solid green;
+  padding: 5px 10px
+}
+  </code>
+</pre>
 </body>
 </html>
