@@ -139,5 +139,56 @@
 }
   </code>
 </pre>
+
+<h2>Box-Sizing</h2>
+<p>
+  O <em>box-sizing</em> serve para dizer se a largura ou altura do container deve levar em consideração o padding adicionado. O que acontece é que quando adicionamos padding o container tende a aumentar seu tamanho para deixar de acordo com o padding adicionado. Se optarmos a utilizado do <em>border-box: box-sizing</em> o container se manterá do mesmo tamanho
+</p>
+
+<div class="block_sem_box_sizing">Bloco</div>
+<pre>
+<code>
+.block_sem_box_sizing{
+  border: 1px solid red;
+  width: 100px;
+  height: 100px;
+  padding: 50px;
+  
+}
+</code>
+</pre>
+<div class="block_box_sizing">Bloco</div>
+
+<pre>
+  <code>
+.block_box_sizing{
+  box-sizing: border-box;
+  border: 1px solid red;
+  width: 100px;
+  height: 100px;
+  padding: 50px;
+}
+  </code>
+  </pre>
+
+  <h2>Font-family</h2>
+  <p>
+    <em>Font-family</em> serve para dizer qual tipo de fonte você gostaria de usar. Para usar será necessário colocar o nome da fonte + genéricos. Exemplo:
+  </p>
+
+  <pre>
+    <code>
+.fonte{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+    </code>
+  </pre>
+<p id="Font-family">
+  Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, tenetur minima repellat laborum ad id obcaecati asperiores quam! Ex, unde. Modi, ipsum. Aliquid similique iste ut odit nisi? Nulla, asperiores!
+</p>
+
+<p>
+  Se o nome da font tiver espaço ela deve estar escrita entre aspas. Quando o navegador não encontra a 1°fonte ele passa a procurar pela próxima, isso se chama <em>fallback</em>, é um segundo plano do navegador
+</p>
 </body>
 </html>

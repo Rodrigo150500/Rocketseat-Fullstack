@@ -61,8 +61,31 @@
 }
 
 .padding{
-
+  
   width: 100px;
   border: 1px solid green;
   padding: 5px 10px
 }
+
+.block_sem_box_sizing{
+  border: 1px solid red;
+  width: 100px;
+  height: 100px;
+  padding: 50px;
+  
+}
+
+.block_box_sizing{
+  box-sizing: border-box;
+  border: 1px solid red;
+  width: 100px;
+  height: 100px;
+  padding: 50px;
+    
+}
+
+#Font-family{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 12px;
+}
+
