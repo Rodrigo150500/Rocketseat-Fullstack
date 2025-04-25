@@ -190,5 +190,84 @@
 <p>
   Se o nome da font tiver espaço ela deve estar escrita entre aspas. Quando o navegador não encontra a 1°fonte ele passa a procurar pela próxima, isso se chama <em>fallback</em>, é um segundo plano do navegador
 </p>
+
+<h2>Font-size</h2>
+<p>
+  <em>Font-size</em> define basicamente o tamanho das letras, seus valores podem ser valores absolutos quanto relativos. Podem ser executadas por px, em, rem, % e dentre outros. Os tamanhos relativos como <em>em</em>, vão pegar valores do container pai, já o <em>rem</em> vai pegar o tamanho do root, que é 16px
+</p>
+
+  <p id="font-size1">
+    modelo 1
+  </p>
+
+
+<pre>
+  <code>
+#font-size1{
+  font-size: 1rem;
+}
+  </code>
+</pre>
+
+<p id="font-size2">
+  modelo 2
+</p>
+
+<pre>
+  <code>
+#font-size2{
+  font-size: 2em;
+}
+  </code>
+</pre>
+
+<p id="font-size3">
+  modelo 3
+</p>
+<pre>
+  <code>
+#font-size3{
+  font-size: 24px;
+}
+
+  </code>
+</pre>
+
+<h2>Font-style</h2>
+
+<p>
+  <em>Font-style</em> serve basicamente se você quer deixar o texto em italico
+</p>
+
+<p id="font-style">
+  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis iusto nulla, necessitatibus tempora sed odit voluptatem explicabo. Dolorum blanditiis ipsam impedit nam cupiditate sint cum dolores repellendus, fugit, dolor tenetur?
+</p>
+
+<h2>Font-weight</h2>
+<p>
+  <em>Font-weight</em> serve para deixar o texto em negrito, porém podendo controlar o quanto de negrito aplicar
+</p>
+
+<p id="bold100">
+  Bold 100
+</p>
+
+<p id="bold300">
+  Bold 300
+</p>
+
+<p id="bold500">
+  Bold 500
+</p>
+
+<p id="bold700">
+  Bold 700
+</p>
+
+<p id="bold900">
+  Bold 900
+</p>
+
+
 </body>
 </html>
