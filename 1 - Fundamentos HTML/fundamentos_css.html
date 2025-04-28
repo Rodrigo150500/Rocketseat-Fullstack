@@ -5,6 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
   <title>CSS</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
 
@@ -268,6 +271,135 @@
   Bold 900
 </p>
 
+<h2>Color</h2>
+<p>
+  A propriedade <em>color</em> faz a troca de cor do texto
+</p>
+
+<p id="color">
+  Color
+</p>
+
+<pre>
+  <code>
+#color{
+  color: red;
+}
+  </code>
+</pre>
+
+<h2>Text-transform</h2>
+<p>
+  <em>Text-transform</em> transforma o texto em caixa alta, caixa baixa ou todas as palavras com a primeira letra maiuscula
+</p>
+
+<p id="uppercase">
+  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam officia laborum eaque molestias laboriosam nam repudiandae deserunt eveniet pariatur sint, dicta aut, nobis mollitia, a quibusdam aliquid consequatur debitis hic.
+</p>
+
+<p id="lowercase">
+  Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident libero sequi asperiores voluptate laborum quisquam, animi recusandae. Accusamus molestias modi expedita, animi nobis molestiae, sapiente beatae dignissimos aliquam enim ab!
+</p>
+
+<p id="capitalize">
+  Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt voluptate reprehenderit iste explicabo suscipit error aspernatur tempore? Quisquam voluptate omnis quam possimus nesciunt molestiae, optio et. Cumque veniam tempore totam.
+</p>
+
+<pre>
+  <code>
+    #uppercase{
+      text-transform: uppercase;
+    }
+    
+    #lowercase{
+      text-transform: lowercase;
+    }
+    
+    #capitalize{
+      text-transform: capitalize;
+    }
+  </code>
+</pre>
+
+<h2>Text-decoration</h2>
+<p>
+  O <em>text-decoration</em> serve para marcar uma linha tipo aquele <em>underline</em> podendo ser modificado o tipo da linha, a cor e grossura. Eles são usados para links.
+</p>
+
+<a id="text-decoration" href="#">
+  Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam aliquam cupiditate, qui quas consectetur, excepturi ipsam consequuntur recusandae nulla accusamus ipsum at animi impedit enim reiciendis natus aperiam rem reprehenderit?
+</a>
+
+<pre>
+  <code>
+#text-decoration{
+  text-decoration: line-through red 1px;
+}
+  </code>
+</pre>
+
+<h2>Text-Align</h2>
+<p>Serve para deixar o texto alinhado ao centro, justificado ou as laterais</p>
+
+<p id="text-align">
+  Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium molestiae, perspiciatis saepe modi iusto voluptas nemo adipisci, veniam eius repellat maiores omnis sint sapiente inventore laudantium consequuntur temporibus. Odit, cumque!
+</p>
+
+<h2>Line-height</h2>
+<p>Define a altura de cada linha em relação a outra</p>
+<p id="line-height">
+  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum ut dicta veritatis nesciunt blanditiis! Rem id quibusdam itaque? Error sapiente, illum minima libero dignissimos sunt autem doloremque quis qui consequuntur. Lorem, ipsum dolor sit amet consectetur adipisicing elit. A ab est laborum, nesciunt expedita eaque harum eius. Ipsum, ab eos consequuntur vitae dignissimos, odit consectetur tempora perferendis eveniet quae optio.
+</p>
+
+<h2>Letter-spacing</h2>
+<p>
+  Essa propriedade faz um espaçamento entre as letras de cada palavra. Para seus valores podem ser números inteiros sem grandeza, podem ser px, rem, em.
+</p>
+
+<p id="letter">
+  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est debitis qui quod odio fugiat illo deserunt eveniet, fugit reprehenderit omnis repellendus nobis tempora, adipisci ipsum ea accusamus facere sequi impedit!
+</p>
+
+<h2>word-spacing</h2>
+<p>
+  Não muito diferente do letter-spacing, o espaçamento será entre as palavras. Mesma ideia dos valores que o letter-spacing
+</p>
+
+<p id="word">
+  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod iste a rerum officiis natus amet inventore deserunt? Expedita explicabo eius, numquam corrupti culpa necessitatibus pariatur fugit ullam voluptas sit repellat.
+</p>
+
+<h2>Font - Shorthand</h2>
+<p>
+  A propriedade <em>font</em> é um shorthand, os valores obrigatórios são a font-family e o font-size, o restante é opcional como o font-weight, font-stretch, font-variant.
+
+</p>
+<p id="shorthand-font">
+  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae dolore labore voluptas unde accusamus quos pariatur ea doloribus aut corporis cum repellat molestias similique recusandae, eveniet ipsum, dicta officiis sint.
+</p>
+
+<h2>Web fonts</h2>
+<p>
+  Basicamente podemos incuir fonts da propria google paara compor nosso site. Podemos incluir diretamente no css ou usar um link que é mais rápido
+</p>
+
+<p id="web-font">
+  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem, dicta vel quas accusantium facere nam dolore totam ea velit reprehenderit nemo minima unde amet esse ullam, architecto culpa ab labore.
+</p>
+<pre>
+  <code>
+
+#web-font{
+  font-family: roboto;
+  font-weight: 500;
+}
+
+  </code>
+</pre>
+
+<p id="importCSS">
+  Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate illo corporis ipsa quod expedita magni quaerat, accusantium odit id. Similique doloribus quasi accusamus aspernatur iure officiis nostrum esse beatae quibusdam?
+</p>
 
 </body>
 </html>

@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap');
+ 
+
 #display_block{
   width: 150px;
   height: 150px;
@@ -138,3 +141,54 @@
 
   font-weight: 900;
 }
+
+#color{
+  color: red;
+}
+
+#uppercase{
+  text-transform: uppercase;
+}
+
+#lowercase{
+  text-transform: lowercase;
+}
+
+#capitalize{
+  text-transform: capitalize;
+}
+
+#text-decoration{
+  text-decoration: line-through red 1px;
+}
+
+#text-align{
+  text-align: center;
+}
+
+#line-height{
+  line-height: 2em;
+}
+
+#letter{
+  letter-spacing: 10px;
+}
+
+#word{
+  word-spacing: 20px;
+}
+
+#shorthand-font{
+  font: 16px/3 sans-serif ;
+
+}
+
+#web-font{
+  font-family: roboto;
+  font-weight: 500;
+}
+
+#importCSS{
+  font-family: "Noto Sans JP", sans-serif;
+}
+
