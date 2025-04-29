@@ -192,3 +192,17 @@
   font-family: "Noto Sans JP", sans-serif;
 }
 
+#background-colors{
+  background-color: red;
+}
+
+#background-images{
+  width: 800px;
+  height: 500px;
+  background-image: url("https://i.pinimg.com/474x/d2/4b/be/d24bbe79387549086d159aa4462bf4c9.jpg");
+  background-repeat: no-repeat;
+}
+
+#background{
+  background-color: rgb(138, 179, 62);
+}
