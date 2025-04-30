@@ -206,3 +206,18 @@
 #background{
   background-color: rgb(138, 179, 62);
 }
+
+body{
+  background-image: url("assets/favicon.png");
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: bottom;
+  background-size: contain;
+}
+
+#background-shorthand{
+  width: 500px;
+  height: 500px;
+
+  background: red url("assets/favicon.png") no-repeat center/50px;
+}
