@@ -8,6 +8,7 @@
 :root{
     font-family: 'Open Sans';
     color: #1B1B1B;
+    font-size: 16px;
 }
 
 article{
@@ -23,8 +24,6 @@ article{
     text-transform: uppercase;
     color: #E1624F;
     font-weight: bold;
-    text-align: left;
-    font-size: 16px;
     margin-bottom: 8px;
 }
 
@@ -45,7 +44,6 @@ section img{
 }
 
 section p {
-    font-size: 16px;
     font-style: italic;
     text-align: center;
     color: #333333;
@@ -60,10 +58,13 @@ section p {
     margin: 64px auto;
 }
 
+#title-container p {
+    color: #333333;
+}
+
 #title-content-list p{
     text-transform: uppercase;
     color: #E95E10;
-    font-size: 16px;
     font-weight: bold;
     margin-bottom: 2px;
 }
@@ -73,6 +74,7 @@ section p {
     font-weight: bold;
     margin-bottom: 8px;
 }
+
 
 ol {
     list-style: none;
@@ -97,7 +99,6 @@ ol li img{
 }
 
 .content-card p{
-    font-size: 16px;
     color:#333333 ;
 }
 
@@ -106,6 +107,7 @@ ol li img{
     font-weight: bold;
     padding-left: 5px;
     list-style-type: none;
+    box-sizing: border-box;
 }
 
 .content-card ul li strong{
@@ -134,7 +136,6 @@ ol li img{
 
 #description{
     margin-top: 40px ;
-    font-size: 16px;
     color:#333333;
     text-align: center;
 }
