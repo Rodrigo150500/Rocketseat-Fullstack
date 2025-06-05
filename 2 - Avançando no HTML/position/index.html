@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <div class="img-container">
+            <h1>Mapa mental</h1>
+            <img src="./assets/Mental map.png" alt="Mapa mental do position">
+        </div>
+
+        <section>
+            <h2>Introdução</h2>
+            <p>
+                No CSS existe uma propriedade <em>position</em> que serve para posicionar elementos dentro do arquivo html. Existem diversos tipos de position, sendo elas:<br>
+                <ul>
+                    <li>static</li>
+                    <li>relative</li>
+                    <li>absolute</li>
+                    <li>fixed</li>
+                    <li>sticky</li>
+                </ul><br>
+                Ao usar algun desses positions liberamos o acesso a algumas props, sendo: <br>
+                <ul>
+                    <li>top, bottom</li>
+                    <li>left, right</li>
+                    <li>inset</li>
+                    <li>z-index</li>
+                </ul>               
+            </p>
+        </section>
+
+        <section>
+            <h2>Static</h2>
+            <p>
+                A propriedade <em>static</em> é o padrão quando não aplicamos o position explicitamente, então por padrão o static é aplicado.
+            </p>
+        </section>
+
+        <section>
+            <h2>Relative</h2>
+            <p>
+                O quando usamos o <code>position: relative</code> podemos reposicionar o elemento para outros pontos. Ela possui alguns pontos como: <br>
+                <ul>
+                    <li><strong>offset relativo a si mesmo</strong> - Reposicionamos a partir de onde o nosso elemento se encontra no próprio corpo. Ou seja, o ponto de origem fica onde o elemento está localizado no html </li>
+                    <li><strong>normal flow</strong> - O normal flow é o fluxo de leitura do html. Então a formação dos elementos é cima para baixo, ao usarmos essa propriedade ela respeita o normal flow sem quebrar o fluxo.</li>
+                    <li><strong>stacking context</strong> - O stacking context é como um empilhamento, basicamente é um eixo Z para mostrar quem está na frente de qual elemento, são como se fosse camadas que podem estar na mesma altura ou acima/abaixo.</li>
+                </ul>
+            </p>
+            <h3>Exemplo</h3>
+            <div class="exemplo-container">
+                <div class="black-box"></div>
+                <div class="red-box" id="relative"></div>
+                <div class="black-box"></div>
+            </div>
+
+            <div class="codigo-exemplo">
+                <code>
+                    #relative{
+                        position: relative;
+                        top: 20px;
+                        left: 20px;
+                    }
+                </code>
+            </div>
+        </section>
+
+        <section>
+            <h2>Absolute</h2>
+            <p>O <code>position:absolute</code> usamos </p>
+        </section>
+
+
+        
+    </main>
+</body>
+</html>
