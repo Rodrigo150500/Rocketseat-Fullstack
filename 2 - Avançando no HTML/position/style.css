@@ -1,7 +1,3 @@
-.exemplo-container{
-
-}
-
 .black-box{
     width: 60px;
     height: 60px;
@@ -20,4 +16,38 @@
     position: relative;
     top: 20px;
     left: 20px;
+}
+
+#container-absolute{
+    position: relative;
+    border: 1px solid #000
+}
+
+#absolute{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+#fixed{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+#container-sticky{
+    border: 1px solid #000;
+    overflow: scroll;
+    height: 150px;
+}
+
+#sticky{
+    position: sticky;
+    top: 30px;
+    z-index: -1;
+}
+
+#inset{
+    position: relative;
+    inset: 20px 
 }

@@ -71,9 +71,119 @@
 
         <section>
             <h2>Absolute</h2>
-            <p>O <code>position:absolute</code> usamos </p>
+            <p>O <code>position:absolute</code> usamos para posicionar ao longo da nossa página, podendo posicionar em qualquer ponto da tela pois não respeita o normal flow ou trabalhar apenas dentro de um conteinar</p>
+            <ul>
+                <li><strong>Fica em um determinado local na tela</strong> - Porém relativo ao containing block próximo ou initial. O relativo ao initial significa que o elemento fica a disposição de toda parte vísivel, enquanto próximo ao containing ele fica apenas em uma área para ser posicionado</li>
+                <li><strong>!normal flow</strong> - não respeita o normal flow saindo da sua posição de acordo com o HTML</li>
+                <li><strong>stacking context</strong> - Determina a altura no eixo Z</li>
+            </ul>
+
+            <div class="exemplo-container" id="container-absolute">
+                <div class="black-box"></div>
+                <div class="red-box" id="absolute"></div>
+                <div class="black-box"></div>
+            </div>
+
+            <div class="codigo-exemplo">
+                <code>
+                    #container-absolute{
+                        position: relative;
+                        border: 1px solid #000
+                    }
+
+                    #absolute{
+                        position: absolute;
+                        top: 20px;
+                        right: 20px;
+                    }
+                </code>
+            </div>
         </section>
 
+        <section>
+            <h2>Fixed</h2>
+            <p>O <code>position: fixed</code> tem como principal função de fixar na tela mesmo scrollando a tela para cima ou para baixo. Fica tipo o <em>whatsapp</em> nos cantos dos sites</p>
+
+            <ul>
+                <li><strong>fixo na tela</strong> relativo ao containing block</li>
+                <li><strong>!normal flow</strong> - não participa do normal flow, ou seja, não fica no lugar posicionado como normalmente deixamos no corpo do HTML</li>
+                <li><strong>stacking context</strong> - libera o acesso para configurarmos sua altura em relação ao eixo Z</li>
+            </ul>
+
+            
+            <div class="exemplo-container">
+                <div class="black-box"></div>
+                <div class="red-box" id="fixed"></div>
+                <div class="black-box"></div>
+            </div>
+
+            <div class="codigo-exemplo">
+                <code>
+                   #fixed{
+                        position: fixed;
+                        bottom: 20px;
+                        right: 20px;
+                    } right: 20px;
+                </code>
+            </div>
+
+        </section>
+
+        <section>
+            <h2>sticky</h2>
+            <p>O <code>position: sticky</code> ele vai ter um efeito de grudar na tela de acordo com o <code>top</code>. Basicamente nesse posição é necessário ter uma barra de rolagem do próprio <code>body</code> ou de um container pai</p>
+            <ul>
+                <li><strong>relativo e fixo</strong> - relativo ao elemento pai que tenha mecanismo scroll - overflow</li>
+                <li><strong>normal flow</strong> - respeita seu posicionamento no corpo HTML</li>
+                <li><strong>stacking context</strong> - libera a configuração do eixo Z</li>
+            </ul>
+
+            <div class="exemplo-container" id="container-sticky">
+                <div class="black-box"></div>
+                <div class="red-box" id="sticky"></div>
+                <div class="black-box"></div>
+            </div>
+
+            <div class="codigo-exemplo">
+                <code>
+                    #container-sticky{
+                        border: 1px solid #000;
+                        overflow: scroll;
+                        height: 150px;
+                    }
+
+                    #sticky{
+                        position: sticky;
+                        top: 30px;
+                        z-index: -1;
+                    }
+                </code>
+            </div>
+
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore sed sunt earum, harum exercitationem deserunt accusantium est officia, eos qui labore numquam vel corporis, iure suscipit nihil at aliquam aperiam!
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi sed dolorem hic eveniet iusto. Iure non provident pariatur enim soluta quo ab dolores recusandae, corporis accusantium possimus amet explicabo ea.
+
+        </section>
+        <section>
+            <h2>Prop inset</h2>
+            <p>Essa propriedade basicamente serve para aplicar todos os posicionamento de top, botom, left e right ao mesmo tempo. Nesse exemplo aplica apenas no top e no left, pois não tem como aplicar em todos ao mesmo tempo</p>
+
+            <div class="exemplo-container">
+                <div class="black-box"></div>
+                <div class="red-box" id="inset"></div>
+                <div class="black-box"></div>
+            </div>
+
+            <div class="codigo-exemplo">
+                <code>
+                    #inset{
+                        position: relative;
+                        inset: 20px 
+                    }
+                </code>
+            </div>
+
+        </section>
 
         
     </main>
