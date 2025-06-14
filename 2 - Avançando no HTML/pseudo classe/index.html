@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pseudo elements</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Psudo-classes</h1>
+
+    <section>
+        <h2>Hover</h2>
+        <p>Hover serve para fazer algo com o elemento assim que o mouse passar por cima de algum elemento</p>
+        <div class="container-hover">
+            <div class="box">1</div>
+            <div class="box">2</div>
+            <div class="box">3</div>
+        </div>
+           
+    </section>
+    <section>
+        <h2>Function</h2>
+        <p>Podemos aplicar os estilos de utilizando filtros nos elementos</p>
+        <ul>
+            <li>not()</li>
+            <li>has()</li>
+        </ul>
+        <h3>not()</h3>
+        <p>
+            Aplicamos quando não o elemento não possui uma propriedade que definimos, por exemplo na div número 2 abaixo vamos colocar um id chamada nao
+        </p>
+        <div class="container-not">
+            <div class="box-not">1</div>
+            <div class="box-not" id="nao">2</div>
+            <div class="box-not">3</div>
+        </div>
+        <pre>
+            <code>
+&lt;div class="container-not"&gt;
+    &lt;div class="box-not"1&lt;/div&gt;
+    &lt;div class="box-not" id="nao">2&lt;/div&gt;
+    &lt;div class="box-not">3&lt;/div&gt;
+&lt;/div&gt;
+
+.box-not:not(#nao){
+    background-color: red;
+}
+            </code>
+        </pre>
+
+        <h2>has()</h2>
+        <p>O has é o oposto, é quando um filtro aplicado quando o elemento possui uma propriedade, por exemplo vamos verificar se o container-has possui hover, se tiver coloque uma borda</p>
+
+        <div class="container-has">
+            <div class="box-has">1</div>
+            <div class="box-has">2</div>
+            <div class="box-has">3</div>
+        </div>
+
+        <pre>
+            <code>
+&lt;div class="container-has"&gt;
+    &lt;div class="box-has">1&lt;/div&gt;
+    &lt;div class="box-has">2&lt;/div&gt;
+    &lt;div class="box-has">3&lt;/div&gt;
+&lt;/div&gt;
+
+.box-has{
+    width: 40px;
+    height: 40px;
+    border: solid;
+    text-align: center;
+    line-height: 250%;
+    margin-top: 4px;
+}
+
+.box-has:hover{
+    background-color: red;
+}
+
+.container-has:has(div:hover){
+    border: solid
+}
+            </code>
+        </pre>
+    </section>
+
+    <section>
+        <h2>structural</h2>
+        <p>Possui dois elementos para estilizar</p>
+        <ul>
+            <li>root</li>
+            <li>nth-child(n)</li>
+        </ul>
+
+        <h3>root</h3>
+        <p>Possui um peso maior que a própria tag na estilização</p>
+        <p>Nesse exemplo tudo ficaria vermelho, pois estou falando para todos os elementos ficarem com fundo vermelho</p>
+        <pre>
+            <code>
+:root{
+    background-color: red;
+}
+            </code>
+        </pre>
+
+        <h3>nth-child(n)</h3>
+        <p>
+            Podemos estilizar um elemento espefícico de um container, um filho desse container
+        </p>
+
+        <div class="container-nth">
+            <div class="box-nth">1</div>
+            <div class="box-nth">2</div>
+            <div class="box-nth">3</div>
+        </div>
+
+        <pre>
+            <code>
+.box-nth:nth-child(2){
+    background-color: lightblue;
+} //Nesse exemplo peguei o segundo filho do pai container-nth
+            </code>
+        </pre>
+
+        <p>Isso se por exemplo tivermos outro elemento entre o 1 e o 2, e quisermos selecionar ainda o mesmo elemento nesse caso o 2, temos que mudar o numero para 3, ele não segue por ordem de elemento</p>
+        
+        <div class="container-nth">
+            <div class="box-nth-span">1</div>
+            <span>1.5</span>
+            <div class="box-nth-span">2</div>
+            <div class="box-nth-span">3</div>
+        </div>
+
+        <pre>
+            <code>
+.box-nth-span:nth-child(3){
+    background-color: lightblue;
+} // aqui selecionamos o box numero 2, se quisessemos selecionar a span 1.5 mudariamos de .box-ntn-span:nth-chield(3) para span:nth-chield(2)
+            </code>
+        </pre>
+
+    </section>
+
+    <h1>Pseudo-elements</h1>
+
+    <section>
+        <h2>first-letter</h2>
+        <p>Podemos estilizar a primeira letra de um elemento</p>
+        <div class="container-first-letter">
+            <div class="box-first-letter">111</div>
+            <div class="box-first-letter">222</div>
+            <div class="box-first-letter">333</div>
+        </div>
+
+        <pre>
+            <code>
+.box-first-letter::first-letter{
+    font-size: 25px;
+    text-decoration: underline;
+}
+            </code>
+        </pre>
+
+    </section>
+
+    <section>
+        <h2>before/after</h2>
+        <p>Podemos estilizar um elemento dele antes de existir e depois</p>
+
+        <div class="container-before-after">
+            <div class="box-before-after">111</div>
+            <div class="box-before-after">222</div>
+            <div class="box-before-after">333</div>
+        </div>
+
+        <pre>
+            <code>
+.box-before-after::before{
+    content: "a";
+}
+
+.box-before-after::after{
+    content: "b";
+}
+            </code>
+        </pre>
+    </section>
+
+
+</body>
+</html>
