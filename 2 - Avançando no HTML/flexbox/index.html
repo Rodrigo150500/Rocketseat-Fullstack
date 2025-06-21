@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>FLexbox</title>
+</head>
+<body>
+
+    <h1>CSS Flexbox</h1>
+    <h2>Conceitos</h2>
+    <p>
+        No flexbox quando usamos <code>display: flebox</code> temos uma ideia que o container e os items vão trabalhar juntos, onde dentro o container terá eixos <em>main</em> e <em>cross</em>, sendo <em>main</em> o eixo X e o <em>cross</em> eixo Y
+    </p>
+    <p>
+        Sabendo disso, temos em cada eixo o <em>start</em> e o <em>end</em>, ou seja, onde cada eixo começa ou termina
+    </p>
+    <p>
+        Além disso, podemos também determinar tamanho dos items e containers
+    </p>
+
+    <h2>Eixos</h2>
+    <p>Um exemplo do comportamento em row</p>
+    <div class="eixo-row-container">
+        <div class="eixo-row-item" style="--hue: 100">1</div>
+        <div class="eixo-row-item" style="--hue: 200">2</div>
+        <div class="eixo-row-item" style="--hue: 300">3</div>
+        <div class="eixo-row-item" style="--hue: 400">4</div>
+    </div>
+
+    <p>Invertendo o eixo main</p>
+    <div class="eixo-row-reverse-container">
+        <div class="eixo-row-item" style="--hue: 100">1</div>
+        <div class="eixo-row-item" style="--hue: 200">2</div>
+        <div class="eixo-row-item" style="--hue: 300">3</div>
+        <div class="eixo-row-item" style="--hue: 400">4</div>
+    </div>
+
+    <p>Mostrando o eixo cross</p>
+    <div class="eixo-cross-container">
+        <div class="eixo-row-item" style="--hue: 100">1</div>
+        <div class="eixo-row-item" style="--hue: 200">2</div>
+        <div class="eixo-row-item" style="--hue: 300">3</div>
+        <div class="eixo-row-item" style="--hue: 400">4</div>
+    </div>
+
+    <p>Invertendo o eixo cross</p>
+    <div class="eixo-cross-reverse-container">
+        <div class="eixo-row-item" style="--hue: 100">1</div>
+        <div class="eixo-row-item" style="--hue: 200">2</div>
+        <div class="eixo-row-item" style="--hue: 300">3</div>
+        <div class="eixo-row-item" style="--hue: 400">4</div>
+    </div>
+    
+    <h2>Alignment & Spaces</h2>
+
+    <h3>justify-content</h3>
+    
+    <p>O <code>justify-content</code> é um atributo que faz alinhamentos dentro do container, manipulando a posição dos itens</p>
+    
+    <h4>flex-start</h4>
+    <p>
+        Por padrão o <code>justify-content</code> aplicado é o <em>flex-start</em> onde temos nossos elementos começando no <em>start</em> do eixo <em>main</em>. Se invertermos o eixo com <code>flex-direction: row-reverse</code> o <em>start</em> passa a ser o <em>end</em>, o <em>end</em> passa a ser o <em>start</em>
+    </p>
+    <div class="justify-content-flex-start-container">
+        <div class="eixo-row-item" style="--hue: 100">1</div>
+        <div class="eixo-row-item" style="--hue: 200">2</div>
+        <div class="eixo-row-item" style="--hue: 300">3</div>
+        <div class="eixo-row-item" style="--hue: 400">4</div>
+    </div>
+
+    <p>
+        Agora vendo sua com <code>row-reverse</code> e <code>justify-content: flex-end</code>
+    </p>
+    <div class="justify-content-flex-start-row-reverse-container">
+        <div class="eixo-row-item" style="--hue: 100">1</div>
+        <div class="eixo-row-item" style="--hue: 200">2</div>
+        <div class="eixo-row-item" style="--hue: 300">3</div>
+        <div class="eixo-row-item" style="--hue: 400">4</div>
+    </div>
+
+    <p>
+        A mesma regra se aplica a colunas
+    </p>
+    <div class="justify-content-flex-start-column-container">
+        <div class="eixo-row-item" style="--hue: 100">1</div>
+        <div class="eixo-row-item" style="--hue: 200">2</div>
+        <div class="eixo-row-item" style="--hue: 300">3</div>
+        <div class="eixo-row-item" style="--hue: 400">4</div>
+    </div>
+
+    <h4>center</h4>
+    <p>
+        A ideia é centralizar os itens ao meio
+    </p>
+    <div class="justify-content-center-container">
+        <div class="eixo-row-item" style="--hue: 100">1</div>
+        <div class="eixo-row-item" style="--hue: 200">2</div>
+        <div class="eixo-row-item" style="--hue: 300">3</div>
+        <div class="eixo-row-item" style="--hue: 400">4</div>
+    </div>
+
+    <h4>space-evenly</h4>
+    <p>
+        Os espaços são constantes entre os itens
+    </p>
+    <div class="justify-content-space-evenly-container">
+        <div class="eixo-row-item" style="--hue: 100">1</div>
+        <div class="eixo-row-item" style="--hue: 200">2</div>
+        <div class="eixo-row-item" style="--hue: 300">3</div>
+        <div class="eixo-row-item" style="--hue: 400">4</div>
+    </div>
+
+    <h4>space-around</h4>
+
+    <p>Os espaçamentos ao redor de cada item se são iguais</p>
+
+    <div class="justify-content-space-around-container">
+        <div class="eixo-row-item" style="--hue: 100">1</div>
+        <div class="eixo-row-item" style="--hue: 200">2</div>
+        <div class="eixo-row-item" style="--hue: 300">3</div>
+        <div class="eixo-row-item" style="--hue: 400">4</div>
+    </div>  
+
+    <h4>space-between</h4>
+
+    <p>Os espaçamentos começam com o item no começo e no final, entre eles ficam os outros itens</p>
+
+    <div class="justify-content-space-between-container">
+        <div class="eixo-row-item" style="--hue: 100">1</div>
+        <div class="eixo-row-item" style="--hue: 200">2</div>
+        <div class="eixo-row-item" style="--hue: 300">3</div>
+        <div class="eixo-row-item" style="--hue: 400">4</div>
+    </div>  
+
+    <h4>space-between em coluna</h4>
+    <p>
+        Apenas um exemplo de alinhamento em coluna, as outras propriedades também podem ser ajustadas a colunas, o <code>space-between</code> foi apenas um exemplo
+    </p>
+    <div class="justify-content-space-between-column-container">
+        <div class="eixo-row-item" style="--hue: 100">1</div>
+        <div class="eixo-row-item" style="--hue: 200">2</div>
+        <div class="eixo-row-item" style="--hue: 300">3</div>
+        <div class="eixo-row-item" style="--hue: 400">4</div>
+    </div>  
+
+</body>
+</html>
