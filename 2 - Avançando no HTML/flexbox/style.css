@@ -79,9 +79,75 @@
     flex-direction: column;
 }
 
+.eixo-row-item-align{
+    --hue:0;
+    text-align: center;
+    background-color: hsl(var(--hue), 100%, 70%);
+    width: 20px;    
+}
+.align-item-strech-row-container{
+    border: 1px solid #000;
+    display: flex;
+    height: 20vh;
+    align-items: stretch;
+}
 
+.align-item-flex-start-row-container{
+    border: 1px solid #000;
+    display: flex;
+    height: 20vh;
+    align-items: flex-start;
+}
 
+.align-item-center-row-container{
+    border: 1px solid #000;
+    display: flex;
+    height: 20vh;
+    align-items: center;
+}
 
+.align-item-flex-end-row-container{
+    border: 1px solid #000;
+    display: flex;
+    height: 20vh;
+    align-items: flex-end;
+}
 
+.align-item-baseline-row-container{
+    border: 1px solid #000;
+    display: flex;
+    height: 20vh;
+    align-items: baseline;
+}
 
+.align-item-stretch-column-container{
+    border: 1px solid #000;
+    flex-direction: column;
+    display: flex;
+    height: 20vh;
+    align-items: stretch;
+}
 
+.align-item-center-column-container{
+    border: 1px solid #000;
+    flex-direction: column;
+    display: flex;
+    height: 20vh;
+    align-items: center;
+}
+
+.align-item-flex-start-column-container{
+    border: 1px solid #000;
+    flex-direction: column;
+    display: flex;
+    height: 20vh;
+    align-items: flex-start;
+}
+
+.align-item-flex-end-column-container{
+     border: 1px solid #000;
+    flex-direction: column;
+    display: flex;
+    height: 20vh;
+    align-items: flex-end;
+}
